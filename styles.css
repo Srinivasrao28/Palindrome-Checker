@@ -210,6 +210,10 @@ header{
 .user_input{
     padding: 5px 0;
 }
+.result_container{
+    width: 100%;
+    margin: 0 10px;
+}
  }
  
 @media (425px < width <= 768px) {
