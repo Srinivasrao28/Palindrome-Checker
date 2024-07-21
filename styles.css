@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+header{
+    width: 100vw;
+    height: max-content;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.logo{
+    width: 20%;
+    height: auto;
+    padding: 10px;
+}
+
+.logo img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: -1;
+}
+
+.heading{
+    color: white;
+}
+
+.heading h1{
+    font-size: 2rem;
+    cursor: default;
+    padding: 10px 0;
+}
+
+.container{
+    width: 70%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.user_input{
+    width: 80%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.user_input:hover{
+    background-color: rgba(32, 32, 32, 0.565);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.container .user_input input{
+    width: 80%;
+    height: 40px;
+    font-size: 1.2rem;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.container .user_input button{
+    width: max-content;
+    height: max-content;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .user_input button:hover{
+    background-color: rgb(255, 61, 61);
+    color: white;
+}
+
+.container .defination{
+    width: 80%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.container .defination:hover{
+    background-color: rgba(32, 32, 32, 0.565);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.defination p{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+    padding: 0 20px;
+}
+
+/* Result  */
+
+#result{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.232);
+    z-index: 2;
+    position: absolute;
+}
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result_container{
+    width: 400px;
+    height: 450px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.button{
+    width: max-content;
+    height: max-content;
+    background-color: rgb(239, 65, 65);
+    border-radius: 6px;
+    padding: 7px 20px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: rgb(243, 37, 37);
+    color: white;
+}
+
+.hide{
+    display: none;
+}
+
+/* Media Queries  */
+
+
+@media (320px <= width <= 425px) { 
+.logo{
+    width: 50%;
+}
+.heading h1{
+    font-size: 1rem;
+}
+.container{
+    width: 100%;
+}
+.defination p{
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 0 5px;
+    text-align: justify;
+}
+#check-btn{
+    height: 30px;
+    border-radius: 3px;
+}
+.user_input{
+    padding: 5px 0;
+}
+ }
+ 
+@media (425px < width <= 768px) {
+    .logo{
+        width: 40%;
+    }
+    .heading h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        width: 100%;
+    }
+    .defination p{
+        width: 100%;
+        font-size: 1rem;
+        padding: 0 5px;
+        text-align: justify;
+    }
+    #check-btn{
+        height: 30px;
+        border-radius: 3px;
+    }
+    .user_input{
+        padding: 5px 0;
+    }
+ }
+ 
+@media (768px < width <= 1024px) {
+     
+ }
+ 
+@media (width > 1024px) {
+     
+ }
